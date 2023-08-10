@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
+  var loggedInUser = localStorage.getItem("loggedInUser");
+  if (loggedInUser) {
+    //console.log("loggedin")
+    $("#user").text(""+loggedInUser);
+    $("#loggedin").show();
+    $("#notloggedin").hide();
+    $("#Signout").click(function() {
+      // Remove item from local storage
+      localStorage.removeItem("loggedInUser");
+
+  });
+}
+else {
+  $("#loggedin").hide();
+  $("#notloggedin").show();
+}
+
     var images = [
       'ess.jfif',
       'vs est.jfif',
@@ -7,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add more image filenames here
     ];
     var currentIndex = 0;
-    var intervalTime = 3000; // Change image every 5 seconds
+    var intervalTime = 3000; // Change image every 3 seconds
   
     var herobanner = document.querySelector('.herobanner');
   

@@ -372,3 +372,11 @@
   transform: translate(-50%, -50%);
   color: black;
 }
+.footer {
+  background-color: #0c0c0c; /* Reddish background color */
+  color: white;
+  text-align: center;
+  padding: 10px;
+=
+  width: 100%;
+}
