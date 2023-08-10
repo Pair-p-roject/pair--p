@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link link rel="stylesheet" href="PP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
     <title>Document</title>
 </head>
 <body>
-    <h2>Modal Signup Form</h2>
-    <a href="PP.html"></a>
+    
+    <div class="navbar">
+        
+        <div class="navbar-left">
+          <a class="ESS-logo" href="PP.html"> <img src="pp imaes/logo.jfif" width="100%"; height="80px"> </a>
+          <a class="ESS-logo" href="PP.html"><i class="fa fa-fw fa-home"></i></a>
+          <a href="signin.html" class=""><i class="fa fa-fw fa-envelope"></i> Sign in</a>
+        </div>
+        <ul>
+          <li><a href="Store">Store</a></li>
+          <li><a href="Matches">Matches</a></li>
+        </ul>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-
+        </div>
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <h1>Sign Up</h1>
+      <h1>Sign In</h1>
       <p>Please fill in this form to create an account.</p>
       <hr>
       <label for="email"><b>Email</b></label>
@@ -25,19 +35,14 @@
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
       
       <label>
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
       </div>
     </div>
   </form>
