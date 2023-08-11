@@ -37,3 +37,6 @@ else {
     changeBackgroundImage(); // Initial call
     setInterval(changeBackgroundImage, intervalTime);
   });
+
+  
+  
